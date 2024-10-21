@@ -1,0 +1,23 @@
+:host ::ng-deep .p-button {
+    margin-bottom: 1rem;
+  }
+  
+  :host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+    background-color: #ff9933;
+    color: white;
+  }
+  body {
+    font-family: var(--font-family);
+    background-color: var(--surface-ground);
+    color: var(--text-color);
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,42 @@
+<div class="card">
+    <p-button label="Crear solicitud" icon="pi pi-plus" (onClick)="crearSolicitud()"></p-button>
+  
+    <p-table [value]="tableData" [tableStyle]="{'min-width': '50rem'}">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>N°</th>
+          <th>Empresa</th>
+          <th>Fecha</th>
+          <th>Dirección</th>
+          <th>RUC</th>
+          <th>Linea</th>
+          <th>Represen Legal</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-row>
+        <tr>
+          <td>{{row.id}}</td>
+          <td>
+            {{row.empresa}}
+            <br>
+            <small>{{row.email}}</small>
+          </td>
+          <td>{{row.fecha}}</td>
+          <td>{{row.direccion}}</td>
+          <td>{{row.ruc}}</td>
+          <td>{{row.linea}}</td>
+          <td>{{row.representante}}</td>
+          <td>
+            <p-tag [value]="row.estado" [severity]="getStatusClass(row.estado)"></p-tag>
+          </td>
+          <td>
+            <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-text"></button>
+            <button pButton type="button" icon="pi pi-pencil" class="p-button-text"></button>
+            <button pButton type="button" icon="pi pi-trash" class="p-button-text"></button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>

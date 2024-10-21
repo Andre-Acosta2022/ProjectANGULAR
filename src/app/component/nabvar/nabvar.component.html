@@ -1,0 +1,43 @@
+<div class="p-sidebar">
+  <div class="p-d-flex p-flex-column p-ai-center profile-section">
+    <h3 class="system-name">SHERM</h3>
+    <img src="https://w7.pngwing.com/pngs/16/488/png-transparent-people-silhouette-avatar-profile-view-businessman-men-symbol-businesswoman-suit-business-thumbnail.png" alt="Profile" class="profile-image" />
+    <h3 class="student-name">Sulamita Valdivia Samia</h3>
+    <p class="student-role">Estudiante</p>
+  </div>
+
+  <nav class="menu">
+    <ul class="p-mt-4">
+      <li>
+        <a pButton pRipple class="p-button p-button-text p-d-flex p-ai-center p-jc-start menu-item active" [routerLink]="['/Home']">
+          <i class="pi pi-home p-mr-2"></i> Home
+        </a>
+      </li>        
+      <li>
+        <a pButton pRipple class="p-button p-button-text p-d-flex p-ai-center p-jc-start menu-item" [routerLink]="['/Solicitud']">
+          <i class="pi pi-file p-mr-2"></i> Solicitud
+        </a>
+      </li>
+      <li>
+        <a pButton pRipple class="p-button p-button-text p-d-flex p-ai-center p-jc-start menu-item" [routerLink]="['/Documentación']">
+          <i class="pi pi-book p-mr-2"></i> Documentación
+        </a>
+      </li>
+      <li>
+        <a pButton pRipple class="p-button p-button-text p-d-flex p-ai-center p-jc-start menu-item" [routerLink]="['/Reporte']">
+          <i class="pi pi-envelope p-mr-2"></i> Reporte
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="settings p-mt-auto p-d-flex p-flex-column">
+    <a pButton pRipple class="p-button p-button-text p-d-flex p-ai-center p-jc-start setting-item" [routerLink]="['/configuracion']">
+      <i class="pi pi-cog p-mr-2"></i> Configuración
+    </a>
+    <a pButton pRipple class="p-button p-button-text p-d-flex p-ai-center p-jc-start setting-item" [routerLink]="['/logout']">
+      <i class="pi pi-user p-mr-2"></i> Cerrar sesión
+    </a>
+    <img src="https://startup.upeu.edu.pe/wp-content/uploads/2024/08/logo-upeu-white-scaled-1-1024x246.png" alt="Logo" class="menu-item" />
+  </div>
+</div>

@@ -1,0 +1,82 @@
+.p-sidebar {
+    width: 250px;
+    background-color: #002D72;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    margin: -8px -10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .student-name {
+    font-size: 18px;
+    margin: 0;
+  }
+  .system-name {
+    font-size: 30px;
+    margin: 0;
+  }
+  .student-role {
+    font-size: 14px;
+    color: #C0C0C0;
+    margin: 0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    width: 100%;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration-line: none;
+    
+  }
+  
+  .menu-item.active, .menu-item:hover {
+    background-color: #FFC107;
+    color: #002D72;
+  }
+  
+  .settings {
+    margin-top: 30px;
+    
+  }
+  
+  .setting-item {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration-line: none;
+    
+  }
+  
+  .setting-item:hover {
+    color: #FFC107;
+  }
